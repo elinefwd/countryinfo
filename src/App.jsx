@@ -1,7 +1,7 @@
 import './App.css';
 import axios from 'axios';
 import {useState} from "react";
-
+import world_map from '.assets/world_map.png';
 
 function App() {
 
@@ -20,6 +20,10 @@ function App() {
 
     return (
         <>
+
+            <img src={world_map} alt="worldmap" />
+
+
             <h1>  Maak je applicatie hier! </h1>
 
             <button type= 'button' onClick= {getCountries}>getCountries</button>
